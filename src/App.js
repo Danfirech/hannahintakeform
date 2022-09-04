@@ -5,8 +5,24 @@ import { send } from "emailjs-com";
 import Swal from "sweetalert2";
 import Logo from "../src/media/3Dark.png";
 
+const Navbar = styled.div`
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #efeee8;
+
+  .home {
+    margin-right: 200px;
+    color: #445245;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+`;
+
 const Container = styled.div`
-  height: 3000px;
+  height: 2400px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -130,6 +146,11 @@ const Intake = () => {
   };
   return (
     <>
+      <Navbar>
+        <a className="home" href="https://southernadirondackmidwifery.com/">
+          <div>Home</div>
+        </a>
+      </Navbar>
       <Container>
         <form onSubmit={onSubmit}>
           <Middle>
