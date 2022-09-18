@@ -18,6 +18,7 @@ const Navbar = styled.div`
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    z-index: 99;
   }
 `;
 
